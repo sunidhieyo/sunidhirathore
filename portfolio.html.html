@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunidhi Rathore | Marketing &amp; Content Strategy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=VT323&display=swap">
+<style>
+  :root { --pink:#ffc6e3; --hot:#ff4fa3; --lilac:#cdbdff; --sky:#bfe9ff; --ink:#2b1a4a; --paper:#fff; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 12px 60px; color: var(--ink);
+    font-family: "VT323", "Courier New", monospace; font-size: 20px; line-height: 1.35;
+    background-color: var(--pink);
+    background-image:
+      linear-gradient(45deg, var(--lilac) 25%, transparent 25%, transparent 75%, var(--lilac) 75%),
+      linear-gradient(45deg, var(--lilac) 25%, transparent 25%, transparent 75%, var(--lilac) 75%);
+    background-size: 48px 48px; background-position: 0 0, 24px 24px;
+  }
+  a { color: var(--hot); }
+  a:hover { background: var(--hot); color: #fff; }
+  h1, h2, h3 { font-family: "Instrument Serif", Georgia, serif; font-weight: 400; margin: 0 0 6px; }
+  h1 { font-size: 3rem; text-align: center; text-shadow: 3px 3px 0 var(--sky); line-height: 1; }
+  h2 { font-size: 1.8rem; border-bottom: 2px dashed var(--hot); padding-bottom: 4px; margin-top: 4px; }
+  h3 { font-size: 1.4rem; margin-top: 16px; }
+  .sub { text-align: center; margin: 6px 0 16px; }
+
+  .ticker { max-width: 760px; margin: 0 auto 16px; background: var(--ink); color: var(--sky);
+    border: 2px solid var(--paper); overflow: hidden; white-space: nowrap; }
+  .ticker span { display: inline-block; padding-left: 100%; animation: scroll 20s linear infinite; }
+  @keyframes scroll { to { transform: translateX(-100%); } }
+  @media (prefers-reduced-motion: reduce) { .ticker span { animation: none; padding-left: 8px; } }
+
+  .win { max-width: 760px; margin: 0 auto; background: #e9e4f5; border: 2px solid var(--ink); box-shadow: 6px 6px 0 var(--ink); }
+  .titlebar { display: flex; justify-content: space-between; align-items: center;
+    background: linear-gradient(90deg, var(--hot), var(--lilac)); color: #fff; padding: 3px 6px; }
+  .titlebar .btns span { display: inline-block; width: 20px; height: 18px; margin-left: 3px; background: #e9e4f5;
+    color: var(--ink); text-align: center; line-height: 16px; border: 2px outset #fff; font-size: 16px; }
+
+  .tabs { display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 8px 0; margin: 0; list-style: none; }
+  .tabs button { font: inherit; cursor: pointer; background: var(--sky); color: var(--ink);
+    border: 2px solid var(--ink); border-bottom: none; padding: 2px 12px; }
+  .tabs button[aria-selected="true"] { background: var(--paper); font-weight: bold; }
+  .tabs button:focus-visible { outline: 3px solid var(--hot); outline-offset: 2px; }
+  .panel { display: none; background: var(--paper); margin: 0 8px 8px; padding: 16px; border: 2px solid var(--ink); }
+  .panel.active { display: block; }
+  .panel ul { padding-left: 20px; margin: 6px 0; }
+  .role { color: var(--hot); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; list-style: none; }
+  .tags li { background: var(--pink); border: 2px outset #fff; padding: 0 10px; }
+  .tags li:nth-child(3n+2) { background: var(--sky); }
+  .tags li:nth-child(3n) { background: var(--lilac); }
+  .note { background: #fff7a8; border: 2px dashed var(--ink); padding: 8px 12px; }
+  footer { text-align: center; margin-top: 22px; }
+</style>
+</head>
+<body>
+
+<div class="ticker"><span>★ hi, i’m sunidhi ★ open to marketing, media &amp; brand communication roles ★ say hello at nvmsez@gmail.com ★</span></div>
+
+<h1>Sunidhi Rathore</h1>
+<p class="sub">Marketing · Content Strategy · Communications · Creative Projects</p>
+
+<main class="win">
+  <div class="titlebar"><span>sunidhi.exe</span><span class="btns"><span>_</span><span>□</span><span>×</span></span></div>
+
+  <ul class="tabs" role="tablist">
+    <li><button role="tab" aria-selected="true"  data-tab="about">about me</button></li>
+    <li><button role="tab" aria-selected="false" data-tab="exp">experience</button></li>
+    <li><button role="tab" aria-selected="false" data-tab="campus">campus &amp; projects</button></li>
+    <li><button role="tab" aria-selected="false" data-tab="skills">skills</button></li>
+    <li><button role="tab" aria-selected="false" data-tab="contact">contact</button></li>
+  </ul>
+
+  <section class="panel active" id="about" role="tabpanel">
+    <h2>About me</h2>
+    <p>Creative and enthusiastic undergraduate with hands-on experience in fundraising, marketing, content strategy and event management. I like talking to all kinds of audiences, making engaging materials, and working on projects with a team.</p>
+    <p>I’m interested in marketing, media, brand communication and creative strategy.</p>
+    <h3>Education</h3>
+    <p>B.Tech, Computer Science and Engineering (Data Science)</p>
+    <h3>Currently learning</h3>
+    <ul>
+      <li><b>Digital marketing:</b> SEO, paid campaigns and online brand growth</li>
+      <li><b>Content creation and storytelling</b> for different platforms and audiences</li>
+      <li><b>Brand strategy:</b> how brands build an identity and connect with customers</li>
+      <li><b>Market research:</b> consumer behaviour, trends and audience preferences</li>
+      <li><b>Video editing and creative production</b></li>
+    </ul>
+  </section>
+
+  <section class="panel" id="exp" role="tabpanel">
+    <h2>Experience</h2>
+    <h3>Fundraising Intern <span class="role">@ Muskurahat Foundation</span></h3>
+    <ul>
+      <li>Created fundraising templates and creatives to reach potential donors.</li>
+      <li>Supported donor outreach through creative communication.</li>
+      <li>Learned about audience engagement and cause-based marketing.</li>
+    </ul>
+    <h3>Marketing Intern <span class="role">@ Digital Gold Campaign (2 days)</span></h3>
+    <ul>
+      <li>Promoted digital gold products at a marketing stall, talking to people face to face.</li>
+      <li>Explained product details to a wide range of people.</li>
+      <li>Got practical exposure to customer engagement and persuasion.</li>
+    </ul>
+    <h3>Content Strategist <span class="role">@ College Club</span></h3>
+    <ul>
+      <li>Helped plan content and creative strategy for club activities.</li>
+      <li>Came up with ideas to improve audience engagement and communication.</li>
+      <li>Supported the club’s content and promotion.</li>
+    </ul>
+  </section>
+
+  <section class="panel" id="campus" role="tabpanel">
+    <h2>Campus involvement &amp; projects</h2>
+    <h3>Event management <span class="role">university-level event</span></h3>
+    <ul>
+      <li>Part of the college event management team.</li>
+      <li>Helped with coordination, teamwork and on-ground management.</li>
+    </ul>
+    <h3>Hackathons</h3>
+    <ul>
+      <li>Collaborated on ideas and explored innovative solutions.</li>
+      <li>Practised problem-solving, teamwork and project development.</li>
+    </ul>
+  </section>
+
+  <section class="panel" id="skills" role="tabpanel">
+    <h2>Skills</h2>
+    <ul class="tags">
+      <li>Marketing &amp; audience engagement</li><li>Fundraising outreach</li>
+      <li>Content strategy &amp; planning</li><li>Communication</li>
+      <li>Event coordination</li><li>Creative thinking</li>
+      <li>Team collaboration</li>
+    </ul>
+    <h2>Tools</h2>
+    <ul class="tags">
+      <li>Basic video editing</li><li>Creative template design</li><li>Social media content planning</li>
+    </ul>
+  </section>
+
+  <section class="panel" id="contact" role="tabpanel">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:nvmsez@gmail.com">nvmsez@gmail.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/suniidhiixx">@suniidhiixx</a></li>
+      <li>Phone: <a href="tel:+919811398871">9811398871</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer><p>toodles mwah&lt;3</p></footer>
+
+<script>
+  var tabs = document.querySelectorAll('[role="tab"]');
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) { t.setAttribute('aria-selected', 'false'); });
+      document.querySelectorAll('.panel').forEach(function (p) { p.classList.remove('active'); });
+      tab.setAttribute('aria-selected', 'true');
+      document.getElementById(tab.dataset.tab).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
